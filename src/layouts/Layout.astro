@@ -1,4 +1,8 @@
 ---
+
+//in main.js
+import 'primevue/resources/themes/aura-dark-pink/theme.css'
+
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 
@@ -30,4 +34,14 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	/* Order */
+@layer reset, primevue;
+
+/* Reset CSS */
+@layer reset {
+    button,
+    input {
+        /* CSS to Reset */
+    }
+}
 </style>

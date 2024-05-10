@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import FeaturedCarousel from '../components/FeaturedCarousel.astro';
 import Brands from '../components/Brands.astro';
-import BestBrands from '../components/BestBrands.astro';
+import BestSellers from '../components/BestSellers.astro';
 import Trending from '../components/Trending.astro';
+import NewArrivals from '../components/vue/NewArrivals.vue';
+import PreOrders from '../components/vue/PreOrders.vue';
 
 const title = 'Big Bad Toy Store';
 ---
@@ -12,9 +14,12 @@ const title = 'Big Bad Toy Store';
 	<main>
 		<h1 class="visually-hidden">{title}</h1>
 		<FeaturedCarousel />
+		
 		<Brands />
-		<BestBrands />
+		<BestSellers />
 		<Trending />
+		<NewArrivals client:load />
+		<PreOrders client:load />
 	</main>
 </Layout>
 
