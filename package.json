@@ -13,11 +13,14 @@
   "dependencies": {
     "@astrojs/check": "^0.6.0",
     "@astrojs/vue": "^4.2.0",
+    "@babylonjs/core": "^7.6.0",
+    "@babylonjs/loaders": "^7.6.0",
     "astro": "^4.8.2",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "primeicons": "^7.0.0",
     "primevue": "^3.52.0",
+    "three": "^0.164.1",
     "typescript": "^5.4.5",
     "vue": "^3.4.27"
   },
