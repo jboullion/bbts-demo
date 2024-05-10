@@ -69,6 +69,7 @@ onMounted(async () => {
       (gltf) => {
         gltf.scene.traverse((child) => {
           if (child.isMesh) {
+            console.log(child.material);
             // Upgrade materials to those affected by light
             const mat = new THREE.MeshPhongMaterial({
               color: child.material.color,

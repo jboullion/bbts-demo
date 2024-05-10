@@ -20,11 +20,14 @@
     "bootstrap-icons": "^1.11.3",
     "primeicons": "^7.0.0",
     "primevue": "^3.52.0",
-    "three": "^0.164.1",
-    "typescript": "^5.4.5",
     "vue": "^3.4.27"
   },
   "devDependencies": {
+    "@babylonjs/gui": "^7.6.0",
+    "@babylonjs/inspector": "^7.6.0",
+    "@types/three": "^0.164.0",
+    "three": "^0.164.1",
+    "typescript": "^5.4.5",
     "eslint": "^9.1.1",
     "eslint-plugin-astro": "^1.1.2"
   }
