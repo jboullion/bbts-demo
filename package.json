@@ -27,6 +27,7 @@
     "@babylonjs/gui": "^7.6.0",
     "@babylonjs/inspector": "^7.6.0",
     "@types/three": "^0.164.0",
+    "cypress": "^13.9.0",
     "eslint": "^9.1.1",
     "eslint-plugin-astro": "^1.1.2",
     "three": "^0.164.1",
