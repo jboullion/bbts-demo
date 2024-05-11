@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DailyDeal from '../components/DailyDeal.astro';
+import Brands from '../components/Brands.astro';
+import BestSellers from '../components/BestSellers.astro';
+import Trending from '../components/Trending.astro';
+import NewArrivals from '../components/vue/NewArrivals.vue';
+import PreOrders from '../components/vue/PreOrders.vue';
+import CallOuts from '../components/CallOuts.astro';
+import Newsletter from '../components/Newsletter.astro';
+
+const title = 'Big Bad Toy Store';
+---
+
+<Layout title={title}>
+	<main>
+		<h1 class="visually-hidden">{title}</h1>
+		<DailyDeal />
+		<Brands />
+		<BestSellers />
+		<Trending />
+		<CallOuts />
+		<NewArrivals client:load />
+		<PreOrders client:load />
+		<Newsletter />
+	</main>
+</Layout>
+
+<style>
+	
+</style>
