@@ -7,7 +7,13 @@ import MyThreeViewer from '../components/vue/MyThreeViewer.vue';
             <div class="col-md-6 mb-3 mb-md-0">
                 <a href="#" class="card">
                     <img
-                        src="https://placehold.co/600x400/000000/D00?text=Daily+Deals!"
+                        src="https://placehold.co/300x300/000000/D00?text=Daily+Deals!%0A300x300"
+                        srcset="
+                            https://placehold.co/400x300/000000/D00?text=Daily+Deals!%0A400x300 991w, 
+                            https://placehold.co/600x400/000000/D00?text=Daily+Deals!%0A600x400"  
+                        sizes="
+                            (max-width: 991px) 100vw,
+                            (max-width: 1199px) 100vw"              
                         class="d-block w-100 rounded"
                         alt="Slide 1"
                     />
@@ -17,6 +23,12 @@ import MyThreeViewer from '../components/vue/MyThreeViewer.vue';
                 <a href="#" class="card">
                     <img
                         src="https://placehold.co/600x400/000000/D00?text=Flash+Deal!"
+                        srcset="
+                            https://placehold.co/400x300/000000/D00?text=Flash+Deals!%0A400x300 991w, 
+                            https://placehold.co/600x400/000000/D00?text=Flash+Deals!%0A600x400"  
+                        sizes="
+                            (max-width: 991px) 100vw,
+                            (max-width: 1199px) 100vw"   
                         class="d-block w-100 rounded"
                         alt="Slide 1"
                     />
