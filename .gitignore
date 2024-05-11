@@ -52,7 +52,7 @@ coverage/
 
 # Specific to Astro project
 src/pages/api/
-public/
+
 astro.config.mjs
 
 # Specific to Express project
