@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.6.0",
+    "@astrojs/netlify": "^5.2.1",
     "@astrojs/vue": "^4.2.0",
     "@babylonjs/core": "^7.6.0",
     "@babylonjs/loaders": "^7.6.0",
@@ -26,9 +27,9 @@
     "@babylonjs/gui": "^7.6.0",
     "@babylonjs/inspector": "^7.6.0",
     "@types/three": "^0.164.0",
-    "three": "^0.164.1",
-    "typescript": "^5.4.5",
     "eslint": "^9.1.1",
-    "eslint-plugin-astro": "^1.1.2"
+    "eslint-plugin-astro": "^1.1.2",
+    "three": "^0.164.1",
+    "typescript": "^5.4.5"
   }
 }
