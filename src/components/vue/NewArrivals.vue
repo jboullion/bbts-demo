@@ -3,7 +3,9 @@
     <div class="container">
       <div class="d-flex align-items-center">
         <h2 class="flex-fill">New Arrivals</h2>
-        <a href="#" class="text-decoration-none">View All</a>
+        <a href="#" class="text-decoration-none"
+          >View All <span class="visually-hidden">New Arrivals</span></a
+        >
       </div>
       <HomeCarousel :products="images" />
     </div>
