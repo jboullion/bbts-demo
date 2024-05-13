@@ -7,7 +7,18 @@
           >View All <span class="visually-hidden">Pre Orders</span></a
         >
       </div>
-      <HomeCarousel :products="images" />
+      <ul class="scroll-list">
+        <li v-for="image in images" :key="image.imageSrc" class="m-2">
+          <a href="#" class="card">
+            <img
+              :src="image.imageSrc"
+              class="w-100 rounded"
+              :alt="image.altText"
+              loading="lazy"
+            />
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -67,3 +78,17 @@ const images = ref([
   },
 ]);
 </script>
+<style>
+.scroll-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 -10px;
+  list-style: none;
+  display: flex;
+}
+
+.scroll-list li {
+  flex: 0 0 auto;
+}
+</style>

@@ -98,7 +98,7 @@ const responsiveOptions = ref([
 
 @media screen and (max-width: 575px) {
   .p-carousel {
-    margin: 0 -15px;
+    margin: 0 -10px;
   }
 
   .p-carousel-next.p-link,
@@ -107,11 +107,11 @@ const responsiveOptions = ref([
   }
 
   .p-carousel-next.p-link {
-    left: 94% !important;
+    left: 90% !important;
   }
 
   .p-carousel-prev.p-link {
-    right: 94% !important;
+    right: 90% !important;
   }
 }
 </style>
