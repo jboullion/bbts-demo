@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column h-100">
+  <div id="productCanvasWrapper" class="d-flex flex-column h-100">
     <div id="productCanvas" class="flex-fill" style="position: relative">
       <div
         v-if="loading"
@@ -27,6 +27,7 @@ let meshes: THREE.Mesh[];
 let camera: THREE.PerspectiveCamera;
 let scene: THREE.Scene;
 let canvas: HTMLElement | null;
+let canvasWrapper: HTMLElement | null;
 let animator: number;
 let model: GLTF | null;
 
@@ -64,20 +65,11 @@ function setupScene() {
   setupThreeJS();
   onWindowResize();
   setupModel();
-  //setupSceneObjects();
 
   loading.value = false;
 
-  // if (!animation.prevTick) {
   animate();
-  // }
 }
-
-// function clearScene(): void {
-// 	while (scene.children.length > 0) {
-// 		scene.remove(scene.children[0]);
-// 	}
-// }
 
 function setupThreeJS() {
   scene = new THREE.Scene();
@@ -89,8 +81,9 @@ function setupThreeJS() {
     logarithmicDepthBuffer: true,
   }); // { alpha: true }
   canvas = document.getElementById("productCanvas");
+  canvasWrapper = document.getElementById("productCanvasWrapper");
 
-  if (!canvas) return;
+  if (!canvas || !canvasWrapper) return;
 
   canvas.appendChild(renderer.domElement);
 
@@ -133,14 +126,16 @@ function setupModel() {
 
 function onWindowResize() {
   if (!camera) return;
-  if (!canvas) return;
+  if (!canvas || !canvasWrapper) return;
   if (!renderer) return;
+  canvas.style.height = "0px";
 
   const width = canvas.getBoundingClientRect().width;
-  let height = canvas.getBoundingClientRect().height;
+  let height = canvasWrapper.getBoundingClientRect().height;
 
   if (height < 300) {
     height = 300;
+    canvas.style.height = "300px";
   }
 
   // Update aspect ratio
@@ -193,12 +188,10 @@ function animate() {
 
   controls.update();
 
-  //this.camera.position.clamp(this.minMovement, this.maxMovement);
   renderer.render(scene, camera);
   //if (labelRenderer) labelRenderer.render(scene, camera);
 
   // clamp to fixed framerate
-
   const now = Math.round((animation.FPS * window.performance.now()) / 1000);
 
   if (now == animation.prevTick) return;
