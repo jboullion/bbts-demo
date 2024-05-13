@@ -14,8 +14,6 @@
     "@astrojs/check": "^0.6.0",
     "@astrojs/netlify": "^5.2.1",
     "@astrojs/vue": "^4.2.0",
-    "@babylonjs/core": "^7.6.0",
-    "@babylonjs/loaders": "^7.6.0",
     "astro": "^4.8.2",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
@@ -24,8 +22,6 @@
     "vue": "^3.4.27"
   },
   "devDependencies": {
-    "@babylonjs/gui": "^7.6.0",
-    "@babylonjs/inspector": "^7.6.0",
     "@types/three": "^0.164.0",
     "cypress": "^13.9.0",
     "eslint": "^9.1.1",
