@@ -15,7 +15,6 @@
     "@astrojs/netlify": "^5.2.1",
     "@astrojs/vue": "^4.2.0",
     "astro": "^4.8.2",
-    "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "primeicons": "^7.0.0",
     "primevue": "^3.52.0",
