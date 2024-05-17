@@ -1,6 +1,5 @@
 # Big Bad Toy Store Demo
-A small demo landing page built on Astro.js. Created to demo a variety of ideas and concepts discussed in an interview.
-
+A small demo landing page built on Astro.js. Created to demo a variety of ideas and concepts.
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
